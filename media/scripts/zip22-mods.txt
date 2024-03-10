@@ -1,0 +1,29 @@
+module Base
+{
+    imports    
+    {
+		Base
+	}
+
+    item MODNAME
+    {
+        Type                = WeaponPart,
+        DisplayName         = Eotech XPS3,
+        Icon                = eotechxps3,
+        Weight              = 0.2,
+        WeightModifier      = 0.2,
+        AimingTimeModifier  = 10,
+        MountOn             = DEV6.ITEMNAME1,
+        PartType            = Scope,
+        Tooltip             = Tooltip_RedDot,
+        StaticModel         = RedDot,
+        MetalValue          = 15,
+        WorldStaticModel    = MODNAME,
+    }
+
+	model MODNAME
+    {
+        mesh = weapons/parts/MODNAME,
+        texture = weapons/parts/MODNAME,
+    }
+}
