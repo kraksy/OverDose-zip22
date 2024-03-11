@@ -5,6 +5,36 @@ module Base
 		Base
 	}
 
+    item ZipWMR_Kit
+    {
+        Type = WeaponPart,
+        DisplayName = WMZ_Conversion_Kit,
+        Icon = WMZ_Conversion_Kit,
+        Weight = 0.2,
+    }
+
+    model ZipWMR_Kit
+    {
+        mesh = weapons/parts/MODNAME,
+        texture = weapons/parts/MODNAME,
+    }
+
+    item ZipStock_Kit
+    {
+        Type = WeaponPart,
+        DisplayName = ZipStock,
+        Icon = ZipStock,
+        Weight = 0.2,
+        WeightModifier = 0.3,
+
+    }
+
+    model ZipStock_Kit
+    {
+        mesh = weapons/parts/MODNAME,
+        texture = weapons/parts/MODNAME,
+    }
+
     item MODNAME
     {
         Type                = WeaponPart,

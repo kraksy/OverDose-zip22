@@ -1,0 +1,251 @@
+module Base
+{
+    imports
+    {
+        base
+    }
+
+    /** troll bullet **/
+    /* hans just want big bullet */
+    item OD_CASE_ZIP22_12km
+    {
+        Count = 1,
+        CanStack = TRUE,
+        Weight = 0.001,
+        Type = Normal,
+        DisplayName = 22_12km_case,
+        DisplayCategory = Item,
+        Icon = 22_case_12km
+    }
+
+    item OD_AMMO_ZIP22_12km
+    {
+        Count = 1,
+        CanStack = TRUE,
+        Weight = 0.1,
+        Type = Normal,
+        DisplayName = 22_12km_rifle,
+        DisplayCategory = Item,
+        Icon = 22_12km
+    }
+    
+    /** 22. LONG RIFLE **/
+    /* base zip ammo */
+    item OD_CASE_ZIP22_LR
+    {
+        Count = 1,
+        CanStack = TRUE,
+        Weight = 0.001,
+        Type = Normal,
+        DisplayName = 22_long_rifle_case,
+        DisplayCategory = Item,
+        Icon = 22_case_long_rifle
+    }
+
+    item OD_AMMO_ZIP22_LR
+    {
+        Count = 1,
+        CanStack = TRUE,
+        Weight = 0.1,
+        Type = Normal,
+        DisplayName = 22_long_rifle,
+        DisplayCategory = Item,
+        Icon = 22_long_rifle
+    }
+
+    item OD_Zip22_LR_BOX
+    {
+        CanStack = FALSE,
+        Weight = 0.15,
+        Type = Normal,
+        DisplayName = 22_long_rifle_box,
+        DisplayCategory = Item,
+        Icon = 22_long_rifle_box
+    }
+
+    item OD_Zip22_LR_CAN
+    {
+        CanStack = FALSE,
+        Weight = 1.5,
+        Type = Normal,
+        DisplayName = 22_long_rifle_can,
+        DisplayCategory = Item,
+        Icon = 22_long_rifle_can
+    }
+
+    /** 22. BLACK POWDER **/
+    /* has bigger chance to break or jam */
+    item OD_CASE_ZIP22_BP
+    {
+        Count = 1,
+        CanStack = TRUE,
+        Weight = 0.001,
+        Type = Normal,
+        DisplayName = 22_black_powder_case,
+        DisplayCategory = Item,
+        Icon = 22_black_powder_rat
+    }
+
+    item OD_AMMO_ZIP22_BP
+    {
+        Count = 1,
+        CanStack = TRUE,
+        Weight = 0.1,
+        Type = Normal,
+        DisplayName = 22_black_powder,
+        DisplayCategory = Item,
+        Icon = 22_black_powder
+    }
+
+    item OD_Zip22_BP_BOX
+    {
+        CanStack = FALSE,
+        Weight = 0.15,
+        Type = Normal,
+        DisplayName = 22_black_powder_box,
+        DisplayCategory = Item,
+        Icon = 22_black_powder_box
+    }
+
+    item OD_Zip22_BP_CAN
+    {
+        CanStack = FALSE,
+        Weight = 1.5,
+        Type = Normal,
+        DisplayName = 22_black_powder_can,
+        DisplayCategory = Item,
+        Icon = 22_black_powder_can
+    }
+
+    /** 22. EXTRA LONG **/
+    /* can be loaded to normal lr mag */
+    item OD_CASE_ZIP22_EL
+    {
+        Count = 1,
+        CanStack = TRUE,
+        Weight = 0.001,
+        Type = Normal,
+        DisplayName = 22_extra_long_case,
+        DisplayCategory = Item,
+        Icon = 22_case_extra_long
+    }
+
+    item OD_AMMO_ZIP22_EL
+    {
+        Count = 1,
+        CanStack = TRUE,
+        Weight = 0.1,
+        Type = Normal,
+        DisplayName = 22_extra_long,
+        DisplayCategory = Item,
+        Icon = 22_extra_long
+    }
+
+    item OD_Zip22_EL_BOX
+    {
+        CanStack = FALSE,
+        Weight = 0.15,
+        Type = Normal,
+        DisplayName = 22_extra_long_box,
+        DisplayCategory = Item,
+        Icon = 22_extra_long_box
+    }
+
+    item OD_Zip22_EL_CAN
+    {
+        CanStack = FALSE,
+        Weight = 1.5,
+        Type = Normal,
+        DisplayName = 22_extra_long_can,
+        DisplayCategory = Item,
+        Icon = 22_extra_long_can
+    }
+
+    /** 22. MAGNUM **/
+    /* needs conversion kit */
+    item OD_CASE_ZIP22_MAGNUM
+    {
+        Count = 1,
+        CanStack = TRUE,
+        Weight = 0.001,
+        Type = Normal,
+        DisplayName = 22_magnum_case,
+        DisplayCategory = Item,
+        Icon = 22_case_magnum
+    }
+
+    item OD_AMMO_ZIP22_MAGNUM
+    {
+        Count = 1,
+        CanStack = TRUE,
+        Weight = 0.1,
+        Type = Normal,
+        DisplayName = 22_magnum,
+        DisplayCategory = Item,
+        Icon = 22_magnum
+    }
+
+    item OD_Zip22_MAGNUM_BOX
+    {
+        CanStack = FALSE,
+        Weight = 0.15,
+        Type = Normal,
+        DisplayName = 22_magnum_box,
+        DisplayCategory = Item,
+        Icon = 22_magnum_box
+    }
+
+    item OD_Zip22_MAGNUM_CAN
+    {
+        CanStack = FALSE,
+        Weight = 1.5,
+        Type = Normal,
+        DisplayName = 22_magnum_can,
+        DisplayCategory = Item,
+        Icon = 22_magnum_can
+    }
+
+    /** 22. RAT SHOT **/
+    /* take shotgun shooting , and make it weak */
+    item OD_CASE_ZIP22_RAT
+    {
+        Count = 1,
+        CanStack = TRUE,
+        Weight = 0.001,
+        Type = Normal,
+        DisplayName = 22_rat_case,
+        DisplayCategory = Item,
+        Icon = 22_case_rat
+    }
+
+    item OD_AMMO_ZIP22_RAT
+    {
+        Count = 1,
+        CanStack = TRUE,
+        Weight = 0.1,
+        Type = Normal,
+        DisplayName = 22_rat,
+        DisplayCategory = Item,
+        Icon = 22_rat
+    }
+
+    item OD_Zip22_RAT_BOX
+    {
+        CanStack = FALSE,
+        Weight = 0.15,
+        Type = Normal,
+        DisplayName = 22_rat_box,
+        DisplayCategory = Item,
+        Icon = 22_rat_box
+    }
+
+    item OD_Zip22_RAT_CAN
+    {
+        CanStack = FALSE,
+        Weight = 1.5,
+        Type = Normal,
+        DisplayName = 22_rat_can,
+        DisplayCategory = Item,
+        Icon = 22_rat_can
+    }
+}

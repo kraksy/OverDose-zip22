@@ -1,0 +1,38 @@
+module base
+{
+    imports
+    {
+        base
+    }
+
+    /* base mag with capacity of 10 */
+    item Zip22bmag
+    {
+        CanStack = FALSE,
+        Weight = 0.1,
+        Type = Normal,
+        DisplayName = zip22 mag,
+        Icon = zip22mag
+    }
+
+    /* bigger mag with capacity of 25 */
+    item BX-25mag
+    {
+        CanStack = FALSE,
+        Weight = 0.2,
+        Type = Normal,
+        DisplayName = BX-25 22. magazine,
+        Icon = BX-25
+    }
+
+    /* drum mag with capacity of 50 */
+    item zip22Drum
+    {
+        CanStack = FALSE,
+        Weight = 0.3,
+        Type = Normal,
+        DisplayName = zip22 drum magazine,
+        Icon = ZipDrum
+    }
+
+}

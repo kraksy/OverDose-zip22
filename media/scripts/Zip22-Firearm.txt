@@ -16,10 +16,10 @@ module Base
         AmmoBox                     =   556Box,
         MaxAmmo                     =   25,
         RecoilDelay	                =	0,
-        ReloadTime                  =   19,
-        AimingTime                  =   19,
+        ReloadTime                  =   20,
+        AimingTime                  =   10,
         MinRange	                =	0.61,
-        MaxRange	                =	12,
+        MaxRange	                =	15,
         MinAngle	                =	0.965,
         DoorDamage	                =	25,
         MinDamage	                =	2.6,
@@ -28,11 +28,10 @@ module Base
         PiercingBullets             =   FALSE,
         KnockdownMod	            =	5,
         PushBackMod	                =	0.4,
-        FireMode                    =   Auto,
-        FireModePossibilities       =   Auto/Single,
+        FireMode                    =   Single,
 
         /* Weapon Chance */
-        CriticalChance                  = 33,
+        CriticalChance                  = 10,
         AimingPerkCritModifier          = 2,
         HitChance                       = 35,
         AimingPerkHitChanceModifier     = 7,
@@ -41,7 +40,7 @@ module Base
         
         /* Sounds */
         SoundVolume	            = 40,
-        SoundRadius	            = 110,
+        SoundRadius	            = 80,
         SwingSound	            = Zip22Shoot,
         BreakSound              = Zip22Shoot,
         InsertAmmoSound         = Zip22Reload,
@@ -64,7 +63,7 @@ module Base
         IsAimedFirearm	                =	TRUE,
         UseEndurance	                =	FALSE,
         ConditionMax	                =	10,
-        JamGunChance                    =   5,
+        JamGunChance                    =   244,
         Ranged	                        =	TRUE,
         MetalValue                      =   45,
         SwingTime	                    =	0.5,
@@ -78,18 +77,15 @@ module Base
         ImpactSound	                    =	null,
         NPCSoundBoost	                =	1.5,
         SoundGain                       =   2,
-        SwingAnim	                    =	Rifle,
+        SwingAnim	                    =	Handgun,
         RunAnim	                        =	Run_Weapon2,
         IdleAnim	                    =	Idle_Weapon2,
         ShareDamage	                    =	FALSE,
-        MaxHitCount	                    =	2,
+        MaxHitCount	                    =	1,
         KnockBackOnNoDeath	            =	TRUE,
         ProjectileCount	                =	1,
         ConditionLowerChanceOneIn	    =	60,
-        TwoHandWeapon                   =   TRUE,
-        RequiresEquippedBothHands       =   TRUE,
-        WeaponReloadType                =   boltaction,
-        AttachmentType                  =   Rifle,
+        AttachmentType                  =   Holster,
 
         /* Weapon Modding */
         ModelWeaponPart 				= 	MODNAME MODNAME reddot reddot,
@@ -106,25 +102,7 @@ module Base
 			rotate = 0.0000 0.0000 0.0000,
 		}
 
-		attachment scope
-		{
-			offset = 0.0000 0.0000 0.0000,
-			rotate = 0.0000 0.0000 0.0000,
-		}
-
-		attachment scope2
-		{
-			offset = 0.0000 0.0000 0.0000,
-			rotate = 0.0000 0.0000 0.0000,
-		}
-
 		attachment recoilpad
-		{
-			offset = 0.0000 0.0000 0.0000,
-			rotate = 0.0000 0.0000 0.0000,
-		}
-
-		attachment reddot
 		{
 			offset = 0.0000 0.0000 0.0000,
 			rotate = 0.0000 0.0000 0.0000,
@@ -142,4 +120,158 @@ module Base
 			rotate = 0.0000 0.0000 0.0000,
 		}
 	}
+
+    /* it has the picatinny rail */
+    /* that means it can have scope on */
+    item Zip22_picatinny
+    {
+        DisplayName	                =	Zip22 gun,
+        Icon	                    =	Zip22,
+        WeaponSprite	            =	Zip22,
+        Weight	                    =	0.4,
+        MagazineType                =   556Clip,
+        AmmoType                    =   556Bullets,
+        AmmoBox                     =   556Box,
+        MaxAmmo                     =   25,
+        RecoilDelay	                =	0,
+        ReloadTime                  =   20,
+        AimingTime                  =   10,
+        MinRange	                =	0.61,
+        MaxRange	                =	15,
+        MinAngle	                =	0.965,
+        DoorDamage	                =	25,
+        MinDamage	                =	2.6,
+        MaxDamage	                =	4.9,
+        StopPower                   =   3,
+        PiercingBullets             =   FALSE,
+        KnockdownMod	            =	5,
+        PushBackMod	                =	0.4,
+        FireMode                    =   Single,
+
+        /* Weapon Chance */
+        CriticalChance                  = 10,
+        AimingPerkCritModifier          = 2,
+        HitChance                       = 35,
+        AimingPerkHitChanceModifier     = 7,
+        AimingPerkMinAngleModifier      = 0.01,
+        AimingPerkRangeModifier         = 3,
+        
+        /* Sounds */
+        SoundVolume	            = 40,
+        SoundRadius	            = 80,
+        SwingSound	            = Zip22Shoot,
+        BreakSound              = Zip22Shoot,
+        InsertAmmoSound         = Zip22Reload,
+        EjectAmmoSound          = Zip22Reload,
+        RackSound               = RACK_SOUND,
+        BringToBearSound        = BRINGTOBEAR_SOUND,
+        HitSound                = BulletHitBody,
+		ClickSound              = JAM_SOUND,
+        EquipSound              = EQUIP_SOUND,
+		UnequipSound            = UNEQUIP_SOUND,
+        InsertAmmoStartSound    = AMMOSTART_SOUND,
+		InsertAmmoStopSound     = AMMOSTOP_SOUND,
+		EjectAmmoStartSound     = EJECTAMMO_SOUND,
+		EjectAmmoStopSound      = EJECTAMMO_SOUND,
+        ShellFallSound          = SHELLFALL_SOUND,
+
+        /* Rare */
+        Type	                        =	Weapon,
+        SubCategory	                    =	Firearm,
+        IsAimedFirearm	                =	TRUE,
+        UseEndurance	                =	FALSE,
+        ConditionMax	                =	10,
+        JamGunChance                    =   244,
+        Ranged	                        =	TRUE,
+        MetalValue                      =   45,
+        SwingTime	                    =	0.5,
+        MinimumSwingTime	            =	0.5,
+        ToHitModifier	                =	1.5,
+        SwingAmountBeforeImpact	        =	0,
+        MultipleHitConditionAffected	=	FALSE,
+        SplatSize	                    =	3,
+        SplatNumber	                    =	3,
+        SplatBloodOnNoDeath	            =	TRUE,
+        ImpactSound	                    =	null,
+        NPCSoundBoost	                =	1.5,
+        SoundGain                       =   2,
+        SwingAnim	                    =	Handgun,
+        RunAnim	                        =	Run_Weapon2,
+        IdleAnim	                    =	Idle_Weapon2,
+        ShareDamage	                    =	FALSE,
+        MaxHitCount	                    =	1,
+        KnockBackOnNoDeath	            =	TRUE,
+        ProjectileCount	                =	1,
+        ConditionLowerChanceOneIn	    =	60,
+        AttachmentType                  =   Holster,
+
+        /* Weapon Modding */
+        ModelWeaponPart 				= 	MODNAME MODNAME reddot reddot,
+    }
+
+    model Zip22_picatinny
+    {
+        mesh = weapons/firearm/Zip22,
+		texture = weapons/firearm/Zip22,
+
+		attachment muzzle
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+
+		attachment recoilpad
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+
+		attachment laser
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+
+		attachment world
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+    }
+
+    item merica_ZIP22
+    {
+
+    }
+
+    model merica_ZIP22
+    {
+        mesh = weapons/firearm/Zip22,
+		texture = weapons/firearm/Zip22,
+
+		attachment muzzle
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+
+		attachment recoilpad
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+
+		attachment laser
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+
+		attachment world
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+    }
+
 }
