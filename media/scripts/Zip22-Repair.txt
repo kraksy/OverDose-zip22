@@ -1,0 +1,21 @@
+module OD_BASE_REPAIR 
+{
+    imports
+    {
+        OD_BASE_REPAIR,
+        OD_BASE_MODS,
+        OD_BASE
+    }
+
+    item ID_SCRAP_REPAIR_KIT
+    {
+        Count = 1,
+        CanStack = TRUE,
+        Weight = 0.5,
+        Type = Normal,
+        DisplayName = Scrap_repair_kit,
+        DisplayCategory = Item,
+        Icon = Scrap_repair_kit
+    }
+
+}

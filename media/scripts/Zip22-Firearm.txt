@@ -1,8 +1,9 @@
-module Base
+module OD_BASE
 {
     imports    
     {
-		Base
+		OD_BASE,
+        OD_BASE_AMMO
 	}
 
     item Zip22
@@ -11,10 +12,10 @@ module Base
         Icon	                    =	Zip22,
         WeaponSprite	            =	Zip22,
         Weight	                    =	0.4,
-        MagazineType                =   556Clip,
-        AmmoType                    =   556Bullets,
-        AmmoBox                     =   556Box,
-        MaxAmmo                     =   25,
+        MagazineType                =   OD_BASE.Zip22bmag,
+        AmmoType                    =   OD_BASE_AMMO.OD_AMMO_ZIP22_LR,
+        AmmoBox                     =   OD_BASE_AMMO.OD_Zip22_LR_BOX,
+        MaxAmmo                     =   50,
         RecoilDelay	                =	0,
         ReloadTime                  =   20,
         AimingTime                  =   10,

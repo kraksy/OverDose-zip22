@@ -1,13 +1,18 @@
-module base
+module OD_BASE
 {
     imports
     {
-        base
+        OD_BASE,
+        OD_BASE_AMMO
     }
 
     /* base mag with capacity of 10 */
     item Zip22bmag
     {
+        DisplayCategory = Ammo,
+        MaxAmmo = 10,
+        GunType = OD_BASE.Zip22,
+        WorldStaticModel = Gun_Magazine_Ground,
         CanStack = FALSE,
         Weight = 0.1,
         Type = Normal,

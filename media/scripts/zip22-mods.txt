@@ -1,8 +1,9 @@
-module Base
+module OD_BASE_MODS
 {
     imports    
     {
-		Base
+        OD_BASE_MODS,
+		OD_BASE
 	}
 
     item ZipWMR_Kit

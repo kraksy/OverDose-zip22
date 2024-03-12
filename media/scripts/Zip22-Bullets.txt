@@ -1,8 +1,9 @@
-module Base
+module OD_BASE_AMMO
 {
     imports
     {
-        base
+        OD_BASE_AMMO,
+        OD_BASE
     }
 
     /** troll bullet **/
